@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transavia Story</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+    <!------------
+    Header
+--------------->
+
+    <header>
+        <a href="index.html"><img class="logo" src="img/logostory.png" alt=""></a>
+        <img src="img/user.png" id="userlogo" alt="user">
+        <input type="checkbox" id="myCheckbox1" />
+        <label for="myCheckbox1">
+            <img src="img/zoekgroen.png" alt="zoekknop" class="zoek" />
+        </label>
+
+        <article id="formonzichtbaar">
+            <form action="Post">
+                <p id="sluitform">x</p>
+                <label for="mainlogin-gebruikersnaam">Gebruikersnaam</label>
+                <input id="mainlogin-gebruikersnaam" type="text" placeholder="Gebruikersnaam">
+                <label for="mainlogin-password">Password</label>
+                <input id="mainlogin-password" type="password" placeholder="Wachtwoord">
+                <input class="submit" type="submit" value="log in">
+                <a href="aanmelden.html">
+                    <input class="aanmeldknop" type="button" value="Aanmelden">
+                </a>
+            </form>
+        </article>
+    </header>
+
+
+    <!------------
+    zoekbalk
+--------------->
+
+
+    <section>
+        <form id="zoekbalkhidden">
+            <input id="zoekinput" type="search" placeholder="zoek op Naam, Genre enz... ">
+            <input id="zoeksubmit" type="submit" value="zoek!">
+        </form>
+    </section>
+
+    <!------------
+    Filters
+--------------->
+
+    <section id="slider-wrapperx">
+        <section class="inner-wrapper">
+            <!--            <section>-->
+            <input checked type="radio" name="slide" class="control" id="Slide1" />
+            <input type="radio" name="slide" class="control" id="Slide2" />
+            <input type="radio" name="slide" class="control" id="Slide3" />
+            <input type="radio" name="slide" class="control" id="Slide4" />
+
+            <!--            </section>-->
+            <article class="overflow-wrapper">
+                <section class="slide" id="uitgeklapt">
+                    <h1>Genres</h1>
+                    <article>
+                        <img src="img/comedy.png" alt="comedy">
+                        <h4>comedie</h4>
+                    </article>
+                    <article>
+                        <img src="img/horror.png" alt="horror">
+                        <h4>horror</h4>
+                    </article>
+                    <article>
+                        <img src="img/drama.png" alt="drama">
+                        <h4>drama</h4>
+                    </article>
+                    <article>
+                        <img src="img/romantiek.png" alt="romantiek">
+                        <h4>romantiek</h4>
+                    </article>
+                    <article>
+                        <img src="img/oorlog.png" alt="oorlog">
+                        <h4>oorlog</h4>
+                    </article>
+                    <article>
+                        <img src="img/western.png" alt="western">
+                        <h4>western</h4>
+                    </article>
+                </section>
+                <section class="slide" id="uitgeklapt">
+                    <h1>Tags</h1>
+
+                    <form id="tags">
+                        <input id="tagsinput" type="text">
+                        <input type="submit" value="voeg toe">
+                    </form>
+
+                </section>
+                <section class="slide" id="uitgeklapt">
+                    <h1>Sorteren op</h1>
+                    <select>
+                        <option value="volvo">Sorteren op...</option>
+                        <option value="saab">Populariteit</option>
+                        <option value="opel">Aantal comments</option>
+                        <option value="audi">Naam A-Z</option>
+                        <option value="audi">Naam Z-A</option>
+                        <option value="audi">Al gelezen</option>
+                    </select>
+                </section>
+                <section class="slide" id="uitgeklapt">
+                    <h1>Aanbevolen</h1>
+                    <section class="alleverhalen">
+                        <section>
+                            <article>
+                                <a href="vergezocht.html">
+                                    <section>
+                                        <h1>Vergezocht</h1>
+                                        <p></p>
+                                    </section>
+                                    <section class="imgsection"></section>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="bejaard.html">
+                                    <section>
+                                        <h1>Bejaard</h1>
+                                        <p></p>
+                                    </section>
+                                    <section class="imgsection"></section>
+                                </a>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+        <article id="balletjes">
+            <!--
+            <label for="Slide1" id="s1"></label>
+            <label for="Slide2" id="s2"></label>
+            <label for="Slide3" id="s3"></label>
+            <label for="Slide4" id="s4"></label>
+-->
+            <button class="next" data-nth="0">Volgende</button>
+        </article>
+    </section>
+
+    <!------------
+    Filters ingeklapt
+--------------->
+
+    <section id="ingeklapt">
+        <h3>Filters</h3>
+        <h3>V</h3>
+    </section>
+
+    <!------------
+    Verhalen
+--------------->
+
+    <section class="alleverhalen">
+        <h1>Alle verhalen</h1>
+        <section>
+            <article>
+                <a href="vergezocht.html">
+                    <section>
+                        <h1>Vergezocht</h1>
+                        <p> </p>
+                    </section>
+                    <section class="imgsection"></section>
+                </a>
+            </article>
+            <article>
+                <a href="vergezocht.html">
+                    <section>
+                        <h1>Bejaard</h1>
+                        <p> </p>
+                    </section>
+                    <section class="imgsection"></section>
+                </a>
+            </article>
+            <article>
+                <a href="vergezocht.html">
+                    <section>
+                        <h1>Western</h1>
+                        <p> </p>
+                    </section>
+                    <section class="imgsection"></section>
+                </a>
+            </article>
+            <article>
+                <a href="vergezocht.html">
+                    <section>
+                        <h1>Parijs</h1>
+                        <p> </p>
+                    </section>
+                    <section class="imgsection"></section>
+                </a>
+            </article>
+            <article>
+                <a href="vergezocht.html">
+                    <section>
+                        <h1>Martin Bril</h1>
+                        <p> </p>
+                    </section>
+                    <section class="imgsection"></section>
+                </a>
+            </article>
+            <article>
+                <a href="vergezocht.html">
+                    <section>
+                        <h1>Ollebolleke</h1>
+                        <p> </p>
+                    </section>
+                    <section class="imgsection"></section>
+                </a>
+            </article>
+        </section>
+    </section>
+
+    <script src="js/transavjavascrip.js"></script>
+
+</body>
+
+</html>

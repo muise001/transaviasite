@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transavia Story</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+    <!------------
+    Header
+--------------->
+
+    <header>
+        <img class="logo" src="img/logostory.png" alt="">
+        <img src="img/user.png" id="userlogo" alt="user">
+        <input type="checkbox" id="myCheckbox1" />
+        <label for="myCheckbox1">
+            <img src="img/zoekgroen.png" alt="zoekknop" class="zoek" />
+        </label>
+
+        <article id="formonzichtbaar">
+            <form action="Post">
+                <p id="sluitform">x</p>
+                <label for="mainlogin-gebruikersnaam">Gebruikersnaam</label>
+                <input id="mainlogin-gebruikersnaam" type="text" placeholder="Gebruikersnaam">
+                <label for="mainlogin-password">Password</label>
+                <input id="mainlogin-password" type="password" placeholder="Wachtwoord">
+                <input class="submit" type="submit" value="log in">
+                <a href="aanmelden.html">
+                    <input class="aanmeldknop" type="button" value="Aanmelden">
+                </a>
+            </form>
+        </article>
+    </header>
